@@ -77,6 +77,7 @@ function App() {
       <div>
         <NavBar />
         <Routes>
+          <Route exact path="/"/>
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
