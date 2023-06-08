@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useRef } from "react";
 import axios from "axios";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
@@ -28,8 +27,6 @@ function Dashboard() {
   const handleSnackbarClose = () => {
     setSnackbarOpen(false);
   };
-
-  const snackbarRef = useRef(null);
   
   const handleSearchQueryChange = (event) => {
     setSearchQuery(event.target.value);
@@ -65,7 +62,7 @@ function Dashboard() {
           />
         </Grid>
         <Grid item xs={12} sx={{ mb: 2 }}>
-          <Button onClick={handleSearch} variant="outlined">
+          <Button type="submit" onClick={handleSearch} variant="outlined">
             Search
           </Button>
         </Grid>
@@ -73,10 +70,10 @@ function Dashboard() {
       <Grid container spacing={2}>
         {shows.map((show) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={show.show.id}>
-            <Card sx={{ height: "100%" }}>
+            <Card sx={{ height: "500px" , overflowY: "scroll"}}>
               <CardMedia
                 component="img"
-                height="180"
+                height="100%"
                 image={show.show.image?.medium || ""}
                 alt={show.show.name}
               />

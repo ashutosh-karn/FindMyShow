@@ -20,7 +20,8 @@ function NavBar() {
   }, [location.pathname]);
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <>
+    <Box sx={{ flexGrow: 1}}>
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -66,6 +67,7 @@ function NavBar() {
         </Toolbar>
       </AppBar>
     </Box>
+    </>
   );
 }
 

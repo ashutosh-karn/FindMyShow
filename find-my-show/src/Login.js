@@ -3,7 +3,6 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
@@ -19,7 +18,6 @@ import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import 'firebase/compat/auth';
 import { useNavigate } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
-import Dashboard from './Dashboard';
 
 const validationSchema = Yup.object().shape({
   email: Yup.string().email('Invalid email address').required('Email is required'),
