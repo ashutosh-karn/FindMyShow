@@ -1,3 +1,17 @@
+*** BOOK MY SHOW ***
+
+# This app is created using React. 
+# Serverless Environment for Backend: Firebase
+# This app uses API (tvmaze) to fetch related TV show or movie data for users
+# User can open the homepage from link provided and Click on Login button
+# 2 static-default login credentials can be used: 
+  Email: users@findmyshow.com OR admin@findmyshow.com
+  Password: findmyshow123
+# Post login is verified a Dashboard page opens with search-field & search button
+# User can Enter a TV show / Movie name and to related results will be shown with details
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
